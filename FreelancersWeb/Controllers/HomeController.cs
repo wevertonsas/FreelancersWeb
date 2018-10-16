@@ -25,6 +25,7 @@ namespace FreelancersWeb.Controllers
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            ViewData["Email"] = "borbaweverton@gmail.com";
 
             return View();
         }
