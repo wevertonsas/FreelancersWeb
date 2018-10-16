@@ -17,15 +17,14 @@ namespace FreelancersWeb.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Site destinado a comunidade de TI voltado para o mercado de Freelancers";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
-            ViewData["Email"] = "borbaweverton@gmail.com";
+            ViewData["Message"] = "Dados de contato";
 
             return View();
         }
