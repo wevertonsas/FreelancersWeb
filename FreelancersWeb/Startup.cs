@@ -37,7 +37,8 @@ namespace FreelancersWeb
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<FreelancersWebContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("FreelancersWebContext")));
+                    options.UseMySql(Configuration.GetConnectionString("FreelancersWebContext"), BuilderExtensions =>
+                    BuilderExtensions.MigrationsAssembly("FreelancersWeb")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
